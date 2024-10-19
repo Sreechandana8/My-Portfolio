@@ -1,0 +1,179 @@
+
+@media screen and (min-width: 576px) and (max-width: 820px){
+.container {
+    width: 100%; /* Full width for smaller screens */
+    margin: 0 auto;
+    display: block; /* No need for table display on smaller screens */
+}
+ 
+.width-33, .width-66, .width-50 {
+    width: 100%; /* Full width for smaller screens */
+    float: none;
+}
+ 
+a {
+    color: #fff;
+}
+ 
+/*****MENU SECTION*****/
+.main-panel {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    height: auto; /* Adjust height for mobile */
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+ 
+.logo {
+    font-size: 30px; /* Smaller logo on mobile */
+}
+ 
+nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+}
+ 
+nav a {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+}
+ 
+/*****Main BANNER*****/
+.banner-section {
+    width: 100%;
+    margin-top: 20vh; /* Reduced margin on mobile */
+    text-align: center; /* Center the text */
+}
+ 
+.banner-section h1 {
+    font-size: 36px; /* Smaller heading on mobile */
+}
+ 
+.banner-section h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+ 
+.banner-section a {
+    display: inline-block;
+    margin: 10px auto;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+}
+ 
+/*****Main BANNER IMAGE*****/
+.container .width-50 img {
+    width: 20%; /* Make image smaller for mobile */
+    margin-left: 10%; /* Center image on mobile */
+    display: none;
+}
+ 
+/*****ABOUT US SECTION*****/
+.main-section {
+    padding: 60px 20px; /* Reduced padding for mobile */
+}
+ 
+.heading-text {
+    font-size: 28px;
+}
+ 
+.about-img {
+    padding: 0 10px; /* Reduced padding */
+}
+ 
+/*****SKILL SECTION*****/
+.skill {
+    margin-top: 20px;
+    font-size: 16px;
+}
+ 
+/*****EXPERIENCE SECTION*****/
+.edu-exp {
+    width: 100%;
+    margin: 10px 0; /* Full width for each section on mobile */
+}
+ 
+.experience-list {
+    padding: 20px 10px;
+}
+ 
+/*****SERVICE SECTION*****/
+.service-list {
+    padding: 20px 10px;
+    width: 100%; /* Full width */
+}
+ 
+/*****PORTFOLIO SECTION*****/
+.gallery {
+    width: 100%;
+    margin-top: 20px;
+}
+ 
+.gallery .width-33 {
+    width: 100%; /* Full width for mobile */
+}
+ 
+/*****CONTACT US SECTION*****/
+.contact form {
+    width: 100%;
+    padding: 0 10px;
+}
+ 
+.contact h3 {
+    font-size: 20px; /* Adjusted for mobile */
+}
+ 
+/*****FOOTER SECTION*****/
+.footer {
+    padding: 20px 10px;
+    text-align: center;
+}
+ 
+.footer-sect a {
+    display: block; /* Stack social icons vertically */
+    margin: 5px 0;
+}
+}
+/*****MEDIA QUERIES*****/
+@media (min-width: 768px) {
+    .container {
+        width: 1100px;
+    }
+ 
+    .width-33 {
+        width: 33%;
+        float: left;
+    }
+ 
+    .width-66 {
+        width: 66%;
+        float: left;
+    }
+ 
+    .width-50 {
+        width: 50%;
+        float: left;
+    }
+ 
+    nav a {
+        display: inline-block;
+        margin: 0 20px;
+    }
+ 
+    .edu-exp {
+        width: 48%;
+        margin: 1%;
+    }
+ 
+    .testimonial {
+        width: 32%;
+        margin-right: 1%;
+    }
+}
