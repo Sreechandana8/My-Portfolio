@@ -52,6 +52,35 @@
   .container {
     width: 95%;
   }
+  .menu-toggle {
+    display: block;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 
   .main-panel {
     flex-direction: column;
@@ -283,4 +312,5 @@ nav a {
     }
 
 } */
+
 
