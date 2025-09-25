@@ -18,8 +18,10 @@
     <div class="container">
       <div class="width-33 logo">Port<span class="span-col">folio</span>
       </div>
-      <div class="width-66">
-        <nav>
+      <div class="width-66navbar">
+      <span class="menu-toggle">&#9776;</span> <!-- hamburger icon -->
+
+      <nav class="nav-links">
           <a href="#home">
             <span class="span-col">Home</span>
           </a>
@@ -477,10 +479,39 @@
       <div class="footer-sect mt-20 width-50">CopyRight © 2025. All Rights Reserved</div>
     </div>
 </div>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  // Toggle menu + change icon
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    menuToggle.classList.toggle('active');
+
+    // Change symbol between ☰ and ✖
+    if (menuToggle.classList.contains('active')) {
+      menuToggle.innerHTML = "✖";
+    } else {
+      menuToggle.innerHTML = "&#9776;"; // hamburger
+    }
+  });
+
+  // Auto-close menu when link clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+      menuToggle.classList.remove('active');
+      menuToggle.innerHTML = "&#9776;"; // reset to hamburger
+    });
+  });
+</script>
+
 
 </body>
 
 </html>
+
 
 
 
